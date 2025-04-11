@@ -125,15 +125,6 @@ export function FeaturedTutors() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
             loading="lazy"
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-            <div className="flex items-center">
-              <div className="flex items-center text-yellow-400">
-                <Star className="h-4 w-4 fill-current" />
-                <span className="ml-1 text-white font-medium">{tutor.rating}</span>
-              </div>
-              <span className="text-xs text-white/80 ml-1">({tutor.reviews} reviews)</span>
-            </div>
-          </div>
         </div>
 
         {/* Content section */}

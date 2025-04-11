@@ -26,21 +26,19 @@ export function FinalCTA() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left w-full">
-              {/* First column: first half of benefits */}
               <div className="space-y-4">
                 {benefits.slice(0, 3).map((benefit, index) => (
                   <BenefitItem key={index} text={benefit} />
                 ))}
               </div>
               
-              {/* Second column: second half of benefits */}
               <div className="space-y-4">
                 {benefits.slice(3).map((benefit, index) => (
                   <BenefitItem key={index + 3} text={benefit} />
                 ))}
               </div>
             </div>
-            <RequestButton className="bg-white text-blue-600 hover:text-white"/>
+            <RequestButton className="bg-white text-blue-800 hover:text-white"/>
           </div>
         </div>
       </div>
