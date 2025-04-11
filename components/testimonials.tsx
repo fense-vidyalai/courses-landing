@@ -37,15 +37,7 @@ const testimonials = [
     author: "Anjali K.",
     role: "Parent of AP Biology Student",
     image: "/images/parent-4.png",
-  },
-  {
-    id: 5,
-    quote:
-      "The tutors at Vidyalai don't just teach the material, they inspire a love for learning. My daughter now wants to pursue a career in environmental science after her AP experience.",
-    author: "Sarah W.",
-    role: "Parent of AP Environmental Science Student",
-    image: "/images/parent-5.png",
-  },
+  }
 ];
 
 export function Testimonials() {

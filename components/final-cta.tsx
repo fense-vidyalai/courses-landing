@@ -38,7 +38,7 @@ export function FinalCTA() {
                 ))}
               </div>
             </div>
-            <RequestButton className="bg-white text-blue-800 hover:text-white"/>
+            <RequestButton className="bg-white text-blue-900 hover:text-white"/>
           </div>
         </div>
       </div>
