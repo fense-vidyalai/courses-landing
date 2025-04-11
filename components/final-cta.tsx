@@ -1,5 +1,5 @@
-import { Check } from "lucide-react"
-import RequestButton from "./RequestButton"
+import { Check } from "lucide-react";
+import Link from "next/link";
 
 export function FinalCTA() {
   const benefits = [
@@ -8,8 +8,8 @@ export function FinalCTA() {
     "Flexible scheduling",
     "Regular progress reports",
     "Proven results",
-    "Money-back guarantee"
-  ]
+    "Money-back guarantee",
+  ];
 
   return (
     <section className="w-full py-12 md:py-16 lg:py-20 bg-primary text-white relative overflow-hidden">
@@ -21,29 +21,38 @@ export function FinalCTA() {
                 Ready to Secure Your Child's Academic Future?
               </h2>
               <p className="text-lg md:text-xl text-white/90 font-medium">
-                Join thousands of parents who have helped their children achieve academic excellence with Vidyalai
+                Join thousands of parents who have helped their children achieve
+                academic excellence with Vidyalai
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left w-full">
               <div className="space-y-4">
                 {benefits.slice(0, 3).map((benefit, index) => (
                   <BenefitItem key={index} text={benefit} />
                 ))}
               </div>
-              
+
               <div className="space-y-4">
                 {benefits.slice(3).map((benefit, index) => (
                   <BenefitItem key={index + 3} text={benefit} />
                 ))}
               </div>
             </div>
-            <RequestButton className="bg-white text-blue-900 hover:text-white"/>
+            <div className="flex justify-center mt-8 md:mt-10">
+              <Link href={`https://www.vidyalai.com/request?exam=AP`}>
+                <button
+                  className="w-full sm:w-auto inline-flex h-10 items-center justify-center rounded-md bg-white px-6 text-base font-medium text-primary-dark hover:text-white shadow-md hover:bg-primary-dark transition-all duration-300 max-w-xs"
+                >
+                  Request Lesson
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function BenefitItem({ text }: { text: string }) {
@@ -52,5 +61,5 @@ function BenefitItem({ text }: { text: string }) {
       <Check className="h-5 w-5 mr-3 text-white flex-shrink-0 mt-0.5" />
       <span className="text-white font-medium">{text}</span>
     </div>
-  )
+  );
 }

@@ -7,7 +7,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Testimonials } from "@/components/testimonials";
 import { FinalCTA } from "@/components/final-cta";
-import { getCourseBySlug, getAllCourses } from "../data/courses";
+import { getCourseBySlug, getAllCourses } from "../../data/courses";
 import Link from "next/link";
 
 type Props = {

@@ -18,7 +18,12 @@ export const metadata: Metadata = {
   description:
     "Personalized AP tutoring with expert tutors to help your child excel in AP subjects. Flexible scheduling, affordable rates, and proven results.",
   keywords: "AP tutoring, online tutoring, AP exam prep, AP Biology, AP Physics, AP Chemistry, AP Calculus",
-    generator: 'v0.dev'
+  icons: {
+    icon: "/favicon/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon/apple-touch-icon-120x120.png"
+  }
+
 }
 
 export default function RootLayout({

@@ -14,23 +14,23 @@ import RequestButton from "./RequestButton"
 const tutors = [
   {
     id: 1,
-    name: "Arvind Menon",
-    subject: "AP Calculus",
-    position: "Five years of experience helping students excel in AP Calculus AB and BC",
-    education: "B.Sc in Mathematics from IISc Bangalore, M.S. in Applied Mathematics from ETH Zurich",
+    name: "Rema Bhavani Sankar",
+    subject: "AP Biology",
+    position: "Over 9 years of teaching experience, including 6+ years of online instruction.",
+    education: "Post Graduate Diploma , Nutrition and Dietetics , Avinashilingam (Deemed to be) UniversityDoctorate , Dietetics and Food Service Management",
     rating: 4.9,
     reviews: 127,
     price: 35,
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/photo_2025-03-27_14-12-20.jpg-KtgmXfwPqQJwa9QxCwm9qaoOGuXCCe.jpeg",
-    badges: ["IISc Graduate", "ETH Zurich Alum"],
+    badges: ["Post Graduate Diploma", "Avinashilingam"],
   },
   {
     id: 2,
-    name: "Meera Iyer",
-    subject: "AP Biology",
-    position: "Passionate about making complex biology topics easy to grasp",
-    education: "B.Sc in Biotechnology from IISc Bangalore, M.S. in Molecular Biology from Johns Hopkins University",
+    name: "Plaban Dattagupta",
+    subject: "AP Calculus",
+    position: "Online Maths tutoring for last 2 years, all boards upto class 12 (including CBSE, ICSE, ISC, US high school, US AP Calculus, UK GCSE and A level, and International Baccalaureate)",
+    education: "BSc Maths and Economics , The London School of Economics and Political Science (LSE)",
     rating: 4.8,
     reviews: 93,
     price: 32,
@@ -40,11 +40,10 @@ const tutors = [
   },
   {
     id: 3,
-    name: "Jonathan Whitaker",
+    name: "Aparna",
     subject: "AP Physics",
-    position: "Former high school teacher with a hands-on approach to learning",
-    education:
-      "B.Sc in Physics from University of Illinois Urbana-Champaign, M.S. in Physics Education from University of Toronto",
+    position: "Experienced Physics Tutor specializing in high school and advanced-level instruction, including Advanced Placement (AP) Physics.",
+    education: "MSc Physics , Material Science , Mar Thoma College, Thiruvalla",
     rating: 4.9,
     reviews: 156,
     price: 34,
@@ -54,10 +53,10 @@ const tutors = [
   },
   {
     id: 4,
-    name: "Kenji Takahashi",
+    name: "Dr. Bani Chatterjee",
     subject: "AP Chemistry",
-    position: "Specializes in guiding students through tricky AP Chemistry problem-solving",
-    education: "B.Sc in Chemistry from University of Tokyo, M.S. in Organic Chemistry from University of Melbourne",
+    position: "Ph.D Gold Medalist Chemistry teacher with 20 years of teaching experience",
+    education: "M.Sc in Organic Chemistry, B.Sc.in Chemistry, Zoology and Botany",
     rating: 4.7,
     reviews: 84,
     price: 30,
@@ -116,7 +115,7 @@ export function FeaturedTutors() {
     <div key={tutor.id} className="w-full flex-shrink-0">
       <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full">
         {/* Image section */}
-        <div className="relative h-48 w-full bg-gray-100">
+        {/* <div className="relative h-48 w-full bg-gray-100">
           <Image
             src={tutor.image || "/placeholder.svg"}
             alt={`${tutor.name}, ${tutor.subject} Tutor`}
@@ -125,7 +124,7 @@ export function FeaturedTutors() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
             loading="lazy"
           />
-        </div>
+        </div> */}
 
         {/* Content section */}
         <CardContent className="p-4">
